@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSharpClasses.FavoriteThings;
+using System;
 
 namespace CSharpClasses
 {
@@ -6,7 +7,18 @@ namespace CSharpClasses
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var puppy = new Puppy()
+            {
+                Name = "DeeDee",
+                Type = "Shih Tzu",
+                Age = "2 Months"
+            };
+
+            puppy.Play("ball");
+            puppy.Play("stick");
+            puppy.Play("chew toy");
+            puppy.Play("");
+
         }
     }
 }
