@@ -11,13 +11,19 @@ namespace CSharpClasses
             {
                 Name = "DeeDee",
                 Type = "Shih Tzu",
-                Age = "2 Months"
+                Age = 4,
+                Gender = Gender.Female
             };
 
-            puppy.Play("ball");
-            puppy.Play("stick");
-            puppy.Play("chew toy");
-            puppy.Play("");
+            puppy.Play(Activity.Ball);
+            puppy.Play(Activity.Stick);
+            puppy.Play(Activity.ChewToy);
+            puppy.Play(Activity.NoActivitySelected);
+
+            puppy.Train(Trick.Sit);
+            puppy.Train(Trick.RollOver);
+            puppy.Train(Trick.PlayDead);
+            puppy.Train(Trick.NoTrickSelected);
 
         }
     }
