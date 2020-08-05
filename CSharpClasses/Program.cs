@@ -7,6 +7,8 @@ namespace CSharpClasses
     {
         static void Main(string[] args)
         {
+                            // Favorite Things //
+            //Puppy class
             var puppy = new Puppy()
             {
                 Name = "DeeDee",
@@ -25,6 +27,43 @@ namespace CSharpClasses
             puppy.Train(Trick.PlayDead);
             puppy.Train(Trick.NoTrickSelected);
 
+            //JunkFood class
+            var pizza = new JunkFood(FoodType.Pizza)
+            {
+                Name = "Deep Dish"
+            };
+
+            pizza.Eat();
+            pizza.Eat();
+            pizza.Eat();
+            pizza.Eat();
+            pizza.Eat();
+            pizza.Regret();
+            pizza.Eat();
+            pizza.Eat();
+            pizza.Eat();
+
+
+            var iceCream = new JunkFood(FoodType.IceCream)
+            {
+                Name = "Tonight Dough"
+            };
+
+            iceCream.Eat();
+
+            var candy = new JunkFood(FoodType.Candy)
+            {
+                Name = "Reese's Peanut Butter Cup"
+            };
+
+            candy.Eat();
+
+            var nachos = new JunkFood(FoodType.Nachos)
+            {
+                Name = "Doritos"
+            };
+
+            nachos.Eat();
         }
     }
 }

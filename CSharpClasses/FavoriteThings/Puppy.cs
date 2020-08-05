@@ -8,11 +8,11 @@ namespace CSharpClasses.FavoriteThings
     class Puppy
     {
         //properties
-        public string Name {get;set;}
-        public string Type {get;set;}
-        public int Age {get;set;}
+        public string Name { get; set; }
+        public string Type { get; set; }
+        public int Age { get; set; }
 
-        public Gender Gender {get;set;}
+        public Gender Gender { get; set; }
 
         public void Play(Activity activity)
         {
