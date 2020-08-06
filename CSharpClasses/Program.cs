@@ -64,6 +64,19 @@ namespace CSharpClasses
             };
 
             nachos.Eat();
+
+            //VideoGame class
+            var pcGame = new VideoGame(GamingSystem.PC, "Solitare");
+
+            pcGame.LoadGame();
+
+            pcGame.Play();
+
+            var nintendoGame = new VideoGame(GamingSystem.Nintendo, "Zelda");
+
+            nintendoGame.LoadGame();
+
+            nintendoGame.Play();
         }
     }
 }
