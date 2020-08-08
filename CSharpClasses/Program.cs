@@ -22,6 +22,20 @@ namespace CSharpClasses
                     playFavThings.Run();
                 }
 
+                Console.WriteLine(" ");
+
+                // Lego Mini-Figures //
+                Console.WriteLine("Would you like to play around with your lego mini-figures?");
+                userResponse = Console.ReadLine();
+                if (userResponse.ToLower() != "n" && userResponse.ToLower() != "no")
+                {
+                    var playLegos = new LegoMiniFigures.LegoMiniFigures();
+
+                    playLegos.Run();
+                }
+
+                Console.WriteLine(" ");
+
                 Console.WriteLine("Are you done with the C# Classes program?");
                 userResponse = Console.ReadLine();
                 if (userResponse.ToLower() != "y" && userResponse.ToLower() != "yes")

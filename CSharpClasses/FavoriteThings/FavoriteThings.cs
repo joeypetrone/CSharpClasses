@@ -86,7 +86,7 @@ namespace CSharpClasses.FavoriteThings
 
                 friends.AddNewFriend("Mao");
 
-                friends.PlayVideoGame(GamingSystem.PlayStation, "Resident Evil 7");
+                friends.PlayVideoGame(nintendoGame);
 
                 Console.WriteLine("Would you like to run the Favorite Things console app again?");
                 var runAgain = Console.ReadLine();
