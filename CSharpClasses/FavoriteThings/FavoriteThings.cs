@@ -81,6 +81,13 @@ namespace CSharpClasses.FavoriteThings
 
                 nintendoGame.Play();
 
+                //People class
+                var friends = new People();
+
+                friends.AddNewFriend("Mao");
+
+                friends.PlayVideoGame(GamingSystem.PlayStation, "Resident Evil 7");
+
                 Console.WriteLine("Would you like to run the Favorite Things console app again?");
                 var runAgain = Console.ReadLine();
                 if (runAgain.ToLower() != "n" || runAgain.ToLower() != "no")
