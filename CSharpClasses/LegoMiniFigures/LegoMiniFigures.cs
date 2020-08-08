@@ -15,6 +15,17 @@ namespace CSharpClasses.LegoMiniFigures
 
                 Console.WriteLine(" ");
 
+                var newLegoFigure = new MiniFigure()
+                {
+                    HairColor = "green",
+                    HeadType = "construction worker",
+                    TorsoType = "coveralls",
+                    LegType = "coveralls"
+                };
+
+                newLegoFigure.AddAccessories();
+
+                newLegoFigure.ViewAccessories();
 
                 Console.WriteLine("Would you like to run the Legos Mini-Figures console app again?");
                 var runAgain = Console.ReadLine();
