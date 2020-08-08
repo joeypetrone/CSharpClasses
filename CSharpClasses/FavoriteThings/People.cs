@@ -18,11 +18,9 @@ namespace CSharpClasses.FavoriteThings
             Console.WriteLine($"{_friend} is now your friend!");
         }
 
-        public void PlayVideoGame(GamingSystem gamingSystem, string gameTitle)
+        public void PlayVideoGame(VideoGame newGame)
         {
-            var newGame = new VideoGame(gamingSystem, gameTitle);
-
-            Console.WriteLine($"You started playing {gameTitle} on {gamingSystem} with {_friend}");
+            Console.WriteLine($"You started playing {newGame.Title} on {newGame.GamingSystem} with {_friend}");
         }
 
     }
